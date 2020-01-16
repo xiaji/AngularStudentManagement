@@ -23,7 +23,7 @@ export class CourseService {
         return this.http.get<CourseWithTNDto[]>(`${this.courseAddressWithTNUrl}`);
     }
 
-    addCourse(course: CourseDto): Observable<Response> {
+    add(course: CourseDto): Observable<Response> {
         return this.http.post<Response>(this.courseAddUrl, course);
     }
 
